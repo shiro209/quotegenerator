@@ -89,11 +89,6 @@ button:hover{
     width: 80%;
   }
 
-  
-  .divider{
-    background-image: url(images/pattern-divider-mobile.svg);
-  }
-
   button{
   position: absolute;
   left: 43%;
