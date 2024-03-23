@@ -1,0 +1,96 @@
+:root{
+  
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+}
+
+
+@font-face {
+  font-family: manrope;
+  src: url(/advice-generator-app-main/Manrope-VariableFont_wght.ttf);
+}
+
+*{
+  font-family: manrope !important;
+  font-weight: 800;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  background-color: var(--Dark-Blue);
+}
+
+.container{
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: var(--Light-Cyan);
+  position: relative;
+  width: 36%;
+  height: auto;
+  font-size: 28px;
+
+}
+
+#AdviceNo{
+  color: var(--Neon-Green);
+  position: absolute;
+  left: 37%;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: var(--Neon-Green);
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+  top: 93%;
+  left: 45%;
+  border-radius: 50%;
+  margin: 0;
+}
+
+button:hover{
+  box-shadow:  0 0 50px var(--Neon-Green);
+  transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes mymove {
+  50% {box-shadow:  0 0 50px var(--Neon-Green);}
+}
+
+.divider{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    width: 80%;
+  }
+
+  button{
+  position: absolute;
+  left: 43%;
+
+  }
+}
